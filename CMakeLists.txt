@@ -85,7 +85,7 @@ if(OPENMP_ENABLED)
     find_package(OpenMP QUIET)
 endif()
 
-find_package(Ceres REQUIRED)
+find_package(Ceres REQUIRED PATHS $ENV{HOME}/deps/usr/local)
 
 find_package(Boost REQUIRED COMPONENTS
              program_options
